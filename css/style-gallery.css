@@ -1,0 +1,420 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background:#000;
+}
+@font-face {
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "GothamProBlack";
+    src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+    src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"),
+    url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+.tf_bg{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+}
+.tf_bg img{
+	position:absolute;
+	top:0px; /*-482px;	 -(imgh/2 - wh/2) */
+	left:0px;	/* calculate a negative value to center horizontally */
+	width:80%;	/* windowwidth plus negative value of left */
+	/*height:1650px; /* windowheight plus negative value of top */
+	z-index: 1;
+	display:none;
+	height: 100%;
+}
+.tf_pattern{
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:2;
+}
+.tf_content{
+	position:absolute;
+	bottom:50px;
+	right:50px;
+	z-index:10;
+	display:none;
+	background:rgba(0,0,0,0.5);
+	height: 360px;
+}
+.tf_content h2{
+	color:white;
+	font-size:30px;
+	padding:0;
+	margin:0;
+	font-family: 'Dancing Script', arial, serif;
+	text-shadow:1px 1px 2px #000;
+	padding:20px 0 0 40px;
+	
+
+}
+.tf_content p{
+	color:#fff;
+	padding:0;
+	margin:0;
+	
+	padding:20px 10px 20px 40px;
+	width:500px;
+	font-family: 'PT Sans Narrow', arial, serif;
+	font-size:16px;
+	line-height:25px;
+	text-transform:uppercase;
+	
+	
+}
+.tf_content a{
+	color:white;
+	font-family: 'Dancing Script', arial, serif;
+	margin: 0 0 0 205px;
+	padding: 10px 15px;
+	text-align: center;
+	border:2px solid white;
+	text-decoration: none;
+	font-size: 15px;
+	transition: background 0.3s ease 0s, color 0.3s ease 0s, transform 0.3s ease 0s;
+}
+.tf_content a:hover{
+	color:black;
+	border: 2px solid black;
+	
+}
+.tf_thumbs{
+	position:absolute;	
+	z-index:12;
+	right:50px;
+	top:50%;
+	margin-top:-79px;
+	border:4px solid #fff;
+	-moz-box-shadow:1px 1px 5px #202020;
+	-webkit-box-shadow:1px 1px 5px #202020;
+	box-shadow:1px 1px 5px #202020;	
+	-webkit-box-reflect:
+		below 5px
+		-webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(transparent),
+			color-stop(0.6, transparent),
+			to(rgb(18, 18, 18))
+		);
+}
+.tf_thumbs img{
+	display:block;
+}
+.tf_loading{
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin:-30px 0px 0px -30px;
+	width:68px;
+	height:68px;
+	background: url(../images/loader.gif) no-repeat;
+	z-index:999;
+	opacity:1;
+}
+.tf_next,
+.tf_prev{
+	width:35px;
+	height:14px;
+	position:absolute;
+	top:50%;
+	right:320px;
+	z-index:100;
+	cursor:pointer;
+	background:transparent url(../images/nav.png) no-repeat top left;
+	opacity:0.5;
+}
+.tf_next{
+	background-position:0px -14px;
+	margin-top: 267px;
+    margin-right: -310px;
+}
+.tf_prev{
+	background-position:0px 0px;
+	margin-top: 119px;
+    margin-right: -309px;
+}
+.tf_next:hover,
+.tf_prev:hover{
+	opacity:0.9;
+}
+.tf_zoom,
+.tf_fullscreen{
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:6px;
+	right:6px;
+	cursor:pointer;
+	z-index:100;
+	opacity:0.6;
+	background:transparent url(../images/icons.png) no-repeat top left;
+}
+.tf_zoom{
+	background-position:0px -20px;
+}
+.tf_fullscreen{
+	background-position:0px 0px;
+}
+.tf_zoom:hover,
+.tf_fullscreen:hover{
+	opacity:0.9;
+}
+.reference{
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	background:#000;
+	height:23px;
+	text-align:right;
+	width:100%;
+	text-shadow:1px 1px 1px #000;
+	z-index:999;
+	opacity:0.8;
+}
+.description{
+	position:fixed;
+	top:5px;
+	right:5px;
+	text-shadow:1px 1px 1px #000;
+	z-index:999;
+}
+.reference a, .description span{
+	color:#fff;
+	text-transform: uppercase;
+	margin-left:20px;
+	text-decoration:none;
+	font-family:Arial;
+	font-size:10px;
+}
+a.last{
+	float:left;
+	line-height:23px;
+}
+.reference a:hover{
+	text-shadow:0px 0px 1px #fff;
+}
+.inform{
+	color:white;
+	font-family: "GothamProBlack";
+	text-decoration: none;
+	margin: 2% 0 0 2%;
+	display: inline-block;
+	position: relative;
+	font-size: 20px;
+	cursor:pointer;
+}
+
+ .inform-text{
+	display: none;
+	position: absolute;
+	top: -40px;
+	left: -40px;
+	width: 500px;
+	height: 1000px;
+	background: rgba(0,0,0,0.5);
+	 font-family: "GothamProRegular";
+	 font-size: 15px;
+	 padding: 162%;
+	 text-align: center;
+	 box-sizing: border-box;
+}
+ span.inform:hover .inform-text{
+	display: block;
+	
+}
+.inform-text p{
+
+}
+
+a.back-to-gallery{
+	color: white;
+    font-family: "GothamProRegular";
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+    
+    background-image: url(../img/arrow-gallery.png) ;
+    background-position:;
+    background-repeat:no-repeat; 
+    background-size: 100%; 
+	margin: 22px 48px 0 0;
+    width: 33px;
+    height: 54px;
+}
+/*a.back-to-gallery:hover{
+	padding: 7% 8% 2% 10%;
+    background: url(../img/back-gallery-h.png) no-repeat 2px 25px / 92% 30%;
+}*/
+a.back-to-general{
+	color: white;
+    font-family: "GothamProRegular";
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+    padding: 7% 8% 2% 10%;
+    background: url(../img/back.png) no-repeat 2px 25px / 92% 30%;
+}
+a.back-to-general:hover{
+	padding: 7% 8% 2% 10%;
+    background: url(../img/back-h.png) no-repeat 2px 25px / 92% 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.modalDialogGallery {
+ position: fixed;
+ font-family: Arial, Helvetica, sans-serif;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background: rgba(0,0,0,0.8);
+ z-index: 99999;
+ -webkit-transition: opacity 400ms ease-in;
+ -moz-transition: opacity 400ms ease-in;
+ transition: opacity 400ms ease-in;
+ display: none;
+ pointer-events: none;
+
+
+}
+.modalDialogGallery:target {
+ display: block;
+ pointer-events: auto;
+}
+ 
+.modalDialogGallery > div {
+ width: 568px;
+ position: relative;
+ margin: 10% auto;
+ padding: 46px 81px;
+ background: white;
+ text-align: left;
+ 
+}
+.close {
+	background: #777777;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 23px;
+    height: 25px;
+    text-decoration: none;
+   
+}
+.close img{
+	padding:4px;
+}
+ 
+.close:hover { background: #00d9ff; }
+
+
+
+.modalDialogGallery h2{
+	font-weight:bold;
+	font-family: "GothamProBlack";
+	font-size: 38px;
+    color: #383838;
+	padding:15px 15px 15px 0;
+	line-height: 46px;
+	
+}
+.modalDialogGallery p{
+	font-size: 18px;
+    color: #505050;
+    margin: 0 0px 18px 0px;
+    font-family: "GothamProRegular";
+}
+.modalDialogGallery label{
+	display:block;
+	padding:10px;
+	font-weight:bold;
+	color:#5e5e5e;
+	
+}
+.modalDialogGallery input{
+	width:250px;
+	
+	border:1px solid #c3c3c3;
+	color: #868686;
+	font-size: 16px;
+	padding: 10px 10px;
+	border: 1px solid #DFDFDF;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+	
+} 
+.modalDialogGallery textarea{
+	display:block;
+	width:350px;
+	height:100px;
+	margin:0 auto;
+	border:1px solid #c3c3c3;
+	
+}
+.modalDialogGallery input[type="submit"]{
+	margin:0 auto;
+	width:550px;
+	height:45px;
+	    background: white;
+	color:#396cbf;
+	font-size:18px;
+	font-weight:bold;
+	border: 1px solid #396cbf;
+	cursor: pointer;
+	font-family: "GothamProRegular";
+	
+}
+.modalDialogGallery input[type="submit"]:hover{ background:#396cbf; color: white; border: 1px solid #396cbf; }
+
+.gallery-menu{
+	list-style: none;
+}
+.gallery-menu li{
+	margin: 50px 0;
+}
+.gallery-menu li a{
+	text-decoration: none;
+	color:white;
+	font-size: 20px;
+}
+.gallery-menu li a:hover{
+	color:#507299;
+}
