@@ -13,6 +13,40 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/font-awesome.css">
 
+  <!-- style preloader -->
+  <style>
+    #page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('images/loader_dark.gif') no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!-- preloader -->
+<script>
+  $(window).on('load', function () {
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+  </script>
+<!-- preloader end -->
+
   <script>
     $(document).ready(function(){
       $("video").on("mouseover" , function(){
@@ -134,7 +168,7 @@ function initMap() {
 async defer></script>
 </head>
 <body>
-
+  <div id="page-preloader"><span class="spinner"></span></div>
   <div class="wrapper">
     <header id="home">
      <div class="left-sidebar">
@@ -363,6 +397,6 @@ async defer></script>
 </div>
 </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 </body>
 </html>
