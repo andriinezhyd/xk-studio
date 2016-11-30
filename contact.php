@@ -135,41 +135,17 @@ function initMap() {
 <body>
 <div class="wrapper">
 <header id="home">
-  <div class="left-sidebar">
-    <ul class="nav">
-      <li class="cat1 cat animated fadeInLeft">
-        <a href="#" class="icon1"></a><br>МЕНЮ
-          <ul class="submenu animated fadeInLeft">
-          <ul id="left">
-            <li><a href="about us.html">о студии</a></li>
-            <li><a href="proekt.html">коммерческие проекты</a></li>
-            <li><a href="gallery.html">дизайн интерьеров</a></li>
-            <li><a href="#">архитектура</a></li>
-            <li><a href="#">предметный дизайн</a></li>
-          </ul>
-          <ul id="right">
-            <li><a href="prodvizenie.html">комплексный подход</a></li>
-            <li><a href="price.html">стоимость дизайна</a></li>
-            <li><a href="blog.html">блог</a></li>
-            <li><a href="contact.html">контакты</a></li>
-          </ul>               
-        </ul>
-      </li>
-      <li class="cat2 cat animated fadeInLeft"><a href="index.html" class="icon2"></a><br>ДОМОЙ</li>
-      		<li class="cat3 cat animated fadeInLeft"><a href="gallery.html" class="icon3"></a><br>ПОРТФОЛИО</li>
-      		<li class="cat4 cat animated fadeInLeft"><a href="contact.html" class="icon4"></a><br>КОНТАКТЫ</li>
-    </ul>
-  </div>
+  <?php include('partials/sideBar.php')?>
   <div class="top">
-    <h1><a href="index.html" class="krosh">ГЛАВНАЯ</a> / <small><a href="" class="active">КОНТАКТЫ</a></small></h1>
-    <a href="index.html"><img src="img/logo-black.png" alt="LOGO"></a>
+    <h1><a href="index.php" class="krosh">ГЛАВНАЯ</a> / <small><a href="" class="active">КОНТАКТЫ</a></small></h1>
+    <a href="index.php"><img src="img/logo-black.png" alt="LOGO"></a>
   </div>
 </header>
 <div class="block-contact-and-map" id="contact">
 	<div class="contact">
 		<h2>КОНТАКТЫ</h2>
 		<div class="office contacts-general">
-			<p><b>НАШ ОФИС</b>: <br><p class="for-office">пр.Гагарина 41\2</p>
+			<p><b>НАШ ОФИС</b>: <br><p class="for-office">пр.Гагарина 41/2</p>
 		</div>
 		<div class="phone-number contacts-general">
 			<p><b>КАК С НАМИ СВЯЗАТЬСЯ:</b> <br> <p class="for-phone-number"><a href="tel:+380951715166" >+380951715166</a><br><a href="tel:+380577506747" >+380577506747</a></p></p>

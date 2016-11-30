@@ -57,28 +57,10 @@
 <body>
 <div class="wrapper">
 <header id="home">
-  <div class="left-sidebar">
-    <ul class="nav">
-      <li class="cat1 cat animated fadeInLeft">
-        <a href="#" class="icon1"></a><br>МЕНЮ
-          <ul class="submenu animated fadeInLeft">
-            <li><a href="about us.html">о студии</a></li>
-            <li><a href="proekt.html">коммерческие проекты</a></li>
-            <li><a href="gallery.html">дизайн интерьеров</a></li>
-            <li><a href="prodvizenie.html">комплексный подход</a></li>
-            <li><a href="price.html">стоимость дизайна</a></li>
-            <li><a href="blog.html">блог</a></li>
-            <li><a href="contact.html">контакты</a></li>
-          </ul>
-      </li>
-      <li class="cat2 cat animated fadeInLeft"><a href="index.html" class="icon2"></a><br>ДОМОЙ</li>
-      		<li class="cat3 cat animated fadeInLeft"><a href="gallery.html" class="icon3"></a><br>ПОРТФОЛИО</li>
-      		<li class="cat4 cat animated fadeInLeft"><a href="contact.html" class="icon4"></a><br>КОНТАКТЫ</li>
-    </ul>
-  </div>
+  <?php include('partials/sideBar.php')?>
   <div class="top">
-    <h1><a href="index.html" class="krosh">ГЛАВНАЯ</a> / <small><a href="" class="active">О СТУДИИ</a></small></h1>
-    <a href="index.html"><img src="img/logo-black.png" alt="LOGO"></a>
+    <h1><a href="index.php" class="krosh">ГЛАВНАЯ</a> / <small><a href="" class="active">О СТУДИИ</a></small></h1>
+    <a href="index.php"><img src="img/logo-black.png" alt="LOGO"></a>
   </div>
 </header>
 <div class="block-about">
@@ -113,7 +95,7 @@
 			<br>
 			<span>при участии в различных <br>конкурсах и выставках</span>
 			 <br>
-			<a href="gallery.html" class="hvr-sweep-to-bottom">Смотреть работы</a>
+			<a href="gallery.php" class="hvr-sweep-to-bottom">Смотреть работы</a>
 		</div>
 		<div class="stat">
 			<i class="fa fa-users" aria-hidden="true"></i>
@@ -129,7 +111,7 @@
 			<img src="img/icon-big-1.png" alt="play" height="275px">
 			<h3>Наш подход к дизайну</h3>
 			<p>Специализируемся на разработке коммерческой и<br> частной недвижимости </p>
-			<a href="gallery.html" class="hvr-sweep-to-top">СМОТРЕТЬ ПОРТФОЛИО</a>
+			<a href="gallery.php" class="hvr-sweep-to-top">СМОТРЕТЬ ПОРТФОЛИО</a>
 		</div>
 		<div class="list-blue">
 			<ul>
@@ -205,7 +187,7 @@
 				</li>
 			</ul>
 		</div>
-		<a href="gallery.html" class="hvr-sweep-to-top">СМОТРЕТЬ ПОРТФОЛИО</a>
+		<a href="gallery.php" class="hvr-sweep-to-top">СМОТРЕТЬ ПОРТФОЛИО</a>
 	</div>
 	<div class="block-form">
 		<h3>УЗНАЙТЕ, ПОЧЕМУ КЛИЕНТАМ ТАК НРАВИТСЯ РАБОТАТЬ С НАМИ</h3>
@@ -220,40 +202,7 @@
 		</form>
 	</div>
 
-<div class="footer">
-	<div class="meet">
-  		<h2><span class="font">ДАВАЙТЕ</span><br> ВСТРЕТИМСЯ</h2>
-  	</div>
-
- <div class="all-contacts">
-  <div class="call contacts">
-    <p class="title title1"><b>ЗВОНИТЕ:</b></p>
-    <p class="tel1"><a href="tel:+380951715166" >+380951715166</a></p>
-    <p class="tel2"><a href="tel:+380577506747" >+380577506747</a></p>
-  </div>
-  <div class="write contacts">
-    <p class="title title2"><b>ПИШИТЕ:</b></p>
-    <p class="mail1"><a href="mailto:info@hk-design.com.ua" >info@hk-design.com.ua</a></p>
-    
-  </div>
-  <div class="come contacts">
-    <p class="title title3"><b>ПРИЕЖАЙТЕ:</b></p>
-    <p class="adress1"> 61001,Украина,г.Харьков </p>
-    <p class="adress2">пр.Гагарина 41\2</p>
-  </div>
-  <div class="btn-soc contacts">
-    <p class="title title4"><b>СОЦИАЛЬНЫЕ СЕТИ:</b></p>
-    <ul>
-		<li><a target="_blank" class="fb" href="https://www.facebook.com/xkdesingstudio/"></a></li>
-		<li><a target="_blank" class="vk" href="https://vk.com/arthallkharkov"></a></li>
-		<li><a target="_blank" class="yt" href="https://www.youtube.com/channel/UC2YH7AHz5TBPgUf1ccqUNRw"></a></li>
-		<li><a target="_blank" class="in" href="https://www.instagram.com/xkdesign/"></a></li>
-	</ul>
-
-  </div>
- </div>
-
-</div>
+<?php include('partials/footer.php')?>
 </div>
 <div id="openModal" class="modalDialog">
    <div>

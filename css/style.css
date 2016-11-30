@@ -4613,7 +4613,8 @@ p.popular{
 
 
 /*=========================================================================================================*/
-.wrap-mob{
+/* .wrap-mob{
+  display: none;
   max-width: 1024px;
   margin:0 auto;
 }
@@ -5302,7 +5303,7 @@ p.popular{
   padding: 0;
   margin: 0;
   outline: 0;
-  box-sizing: content-box; /*это свойство обязательно*/
+  box-sizing: content-box; это свойство обязательно
   z-index: 99999;
 }
 .ad-menu li {
@@ -5331,13 +5332,13 @@ p.popular{
 .ad-menu ul{
   margin-top:-3px; 
 }
-/*поведение меню при разрешении менее 920 пикселей*/
+поведение меню при разрешении менее 920 пикселей
 @media screen and (max-width: 920px) {
 .ad-menu li {
     width: 49.5%;
   }
 }
-/*поведения и структура при экране менее 680 пикселей*/
+поведения и структура при экране менее 680 пикселей
 @media screen and (max-width: 1024px) {
 .ad-menu li {
     width: 100%;
@@ -5383,7 +5384,7 @@ p.popular{
   z-index: 0;
 }
 .ad-menu nav:focus ul,
-.ad-menu ul:hover { /*решаем проблему со скликиванием*/
+.ad-menu ul:hover { решаем проблему со скликиванием
   display: block;
 }
 
@@ -5403,6 +5404,7 @@ p.popular{
     padding: 3% 3% 3% 4%;
     background: white;
     text-align: center;
-    /*background: #f6ebe4;*/
+    background: #f6ebe4;
 
 }
+ */

@@ -35,7 +35,7 @@ label:hover {
   color: red;
   cursor: pointer;
 }
-body > div > div {padding-top: 3%;}
+body > div > div {padding-top: 10%;}
 @media only screen and (max-width : 1024px){
   body {background: none ;  }
 }
