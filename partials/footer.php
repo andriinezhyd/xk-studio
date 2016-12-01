@@ -1,7 +1,6 @@
-<footer id="footer">
-   <div class="footer">
+<footer id="footer" class="footer" data-role="footer">  
   <div class="meet">
-      <h2><span class="font">ДАВАЙТЕ</span><br> ВСТРЕТИМСЯ</h2>
+      <h2><span class="font">ДАВАЙТЕ </span>ВСТРЕТИМСЯ</h2>
     </div>
 
  <div class="all-contacts">
@@ -32,8 +31,6 @@
 
   </div>
  </div>
-
-</div>
 </footer>
 
 

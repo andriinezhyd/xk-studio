@@ -220,7 +220,127 @@
 /*@import "vendor/jspane.scss";*/
 /*@import "vendor/customSelectBox.scss";*/
 /*@import "partials/header.scss";*/
-/*@import "partials/footer.scss"; */
+#footer {
+  background: #242424;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px 50px 20px;
+  margin: 0 !important; }
+  #footer h2 {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 35px; }
+  #footer .title {
+    display: none; }
+  #footer .all-contacts .call {
+    padding: 20px 0; }
+    #footer .all-contacts .call .tel1 a, #footer .all-contacts .call .tel2 a {
+      color: #fff;
+      text-decoration: none; }
+  #footer .all-contacts .write {
+    padding: 20px 0; }
+    #footer .all-contacts .write a {
+      color: #fff;
+      text-decoration: none; }
+
+.mobile-block-top-about {
+  width: 100%;
+  height: auto;
+  padding: 20% 0;
+  background: url(../../img/bg-about.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 60px 0 0 0; }
+  .mobile-block-top-about h1 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    color: white;
+    font-family: "GothamProBlack"; }
+  .mobile-block-top-about p {
+    margin: 0;
+    font-size: 15px;
+    color: white;
+    font-family: "GothamProRegular";
+    font-weight: bold; }
+
+.mobile-block-history {
+  width: 100%;
+  height: auto;
+  padding: 5% 5%;
+  text-align: center;
+  background: #c8cbcb; }
+  .mobile-block-history h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    color: black;
+    font-family: "GothamProBlack"; }
+  .mobile-block-history p {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    color: black;
+    font-family: "GothamProRegular";
+    text-align: justify; }
+
+.mobile-block-studia {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: white;
+  overflow: hidden; }
+  .mobile-block-studia h3 {
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+    color: black;
+    font-family: "GothamProBlack"; }
+  .mobile-block-studia .direction-dizain {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 8% 5%;
+    background-image: url(../../img/pattern.png);
+    background-color: #f78a49; }
+    .mobile-block-studia .direction-dizain p {
+      font-family: "GothamProBlack";
+      font-size: 50px;
+      padding: 8% 5% 2% 5%;
+      color: white;
+      display: inline-block; }
+    .mobile-block-studia .direction-dizain span {
+      display: inline-block;
+      width: 50%;
+      padding: 0 0 0 5%;
+      color: white;
+      font-family: "GothamProRegular";
+      font-size: 15px; }
+  .mobile-block-studia .direction-prod {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 8% 5%;
+    background-image: url(../../img/pattern.png);
+    background-color: #3C88C6;
+    /*p{
+      font-st
+      }*/ }
+    .mobile-block-studia .direction-prod p {
+      font-family: "GothamProBlack";
+      font-size: 50px;
+      padding: 8% 5% 2% 5%;
+      color: white;
+      display: inline-block; }
+    .mobile-block-studia .direction-prod span {
+      display: inline-block;
+      width: 50%;
+      padding: 0 0 0 5%;
+      font-size: 15px;
+      color: white;
+      font-family: "GothamProRegular"; }
+
 /* reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -269,6 +389,9 @@ body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-size: 18px; }
+
+.overflowhidecs {
+  overflow: hidden !important; }
 
 .screen {
   position: absolute;
@@ -323,10 +446,11 @@ nav {
 div.screen ul.menu,
 ul.menu ul.submenu {
   position: absolute;
+  /*overflow: hidden;*/
   /*top: 60px;*/
   padding: 6px;
   width: 100%;
-  height: 90vh;
+  height: 92vh;
   color: #ededed;
   background-color: #313131; }
 
@@ -409,7 +533,7 @@ div.screen ul li.has-children span:hover:after {
   top: 0;
   left: 0;
   width: 60px;
-  height: 508px;
+  height: 92vh;
   cursor: pointer;
   background-color: #313131;
   -webkit-transition: background-color 0.25s ease-out;
@@ -572,7 +696,8 @@ section.i-main {
     line-height: 40px;
     padding: 15px 0 0 0;
     /*float: right;*/
-    position: relative;
+    /*position: relative;*/
+    /*z-index: 0;*/
     left: 50px;
     text-transform: uppercase; }
     section.i-main ul li a:before {

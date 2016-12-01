@@ -45,7 +45,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
-
+.overflowhidecs {overflow: hidden !important;}
 .screen {
   position: absolute;
   top: 0;
@@ -108,10 +108,11 @@ nav {
 div.screen ul.menu,
 ul.menu ul.submenu{
   position: absolute;
+  /*overflow: hidden;*/
   /*top: 60px;*/
   padding: 6px;
   width: 100%;
-  height: 90vh;
+  height: 92vh;
   color: #ededed;
   background-color: #313131;
 
@@ -199,7 +200,7 @@ div.screen ul li.has-children span:hover:after { border-color: #bababa; }
   top: 0;
   left: 0;
   width: 60px;
-  height: 508px;
+  height: 92vh;
   cursor: pointer;
   background-color: #313131;
   -webkit-transition: background-color 0.25s ease-out;
@@ -375,7 +376,8 @@ section.i-main{
         line-height: 40px;
         padding: 15px 0 0 0;
         /*float: right;*/
-        position: relative;
+        /*position: relative;*/
+        /*z-index: 0;*/
         left: 50px;
         text-transform: uppercase;
         &:before{

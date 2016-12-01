@@ -1329,7 +1329,7 @@
     	width: 250px;
 	}
 	.mobile-block-top-about {
-    	background-size: 122% 100%;
+    	background-size: 122% 100% !important;
 	}
 @media only screen and (max-width : 485px){
 	.mobile-block-reklama h3{
