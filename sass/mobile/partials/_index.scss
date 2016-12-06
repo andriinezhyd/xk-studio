@@ -5,7 +5,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline
+  vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
@@ -27,7 +28,7 @@ table {
 }
 
 * { box-sizing: border-box; }
-
+/* 
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -44,21 +45,29 @@ body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+} */
+.wrapper{
+  display: none;
 }
-.overflowhidecs {overflow: hidden !important;}
-.screen {
+.wrap-mob{
+  width: 100%;
+}
+
+
+/*.overflowhidecs {overflow: hidden !important;}*/
+
+/* .screen {
   position: absolute;
   top: 0;
   right: 0;
-  /*bottom: 0;*/
+  bottom: 0;
   left: 0;
   margin: auto;
-  /*width: 480px;*/
-  /*height: 568px;*/
-  /*background-color: #ededed;*/
+  width: 480px;
+  height: 568px;
+  background-color: #ededed;
   overflow: hidden;
-}
-@media (max-height: 568px) {
+}@media (max-height: 568px) {
 
 .screen {
   top: 24px;
@@ -70,7 +79,7 @@ body {
 .screen {
   top: 0;
   width: 100vw;
-  /*height: 100vh;*/
+  height: 100vh;
 }
 }
 .layout {
@@ -79,7 +88,7 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-nav {
+header {
   position: absolute;
   top: 0;
   left: 0;
@@ -108,29 +117,41 @@ nav {
 div.screen ul.menu,
 ul.menu ul.submenu{
   position: absolute;
-  /*overflow: hidden;*/
-  /*top: 60px;*/
-  padding: 6px;
+  overflow: hidden;
+  top: 60px;
+  padding: 0 20px;
   width: 100%;
   height: 92vh;
   color: #ededed;
   background-color: #313131;
 
 }
-
-div.screen ul.menu li a {
-  opacity: 1;
-  display: block;
-  padding: 10px 12px;
-  position: relative;
-  cursor: pointer;
-  border-radius: 3px;
-  -webkit-transform: translateY(12px);
-  transform: translateY(12px);
-  -webkit-transition: opacity 0.15s 0.1s ease-out, -webkit-transform 0.15s 0.1s ease-out;
-  transition: opacity 0.15s 0.1s ease-out, -webkit-transform 0.15s 0.1s ease-out;
-  transition: opacity 0.15s 0.1s ease-out, transform 0.15s 0.1s ease-out;
-  transition: opacity 0.15s 0.1s ease-out, transform 0.15s 0.1s ease-out, -webkit-transform 0.15s 0.1s ease-out;
+div.screen ul.menu li{
+  border-bottom: 1px solid rgba(204, 204, 204, 0.1);
+  a {
+    display: block;
+    font-size: 10px;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: 'futurademicregular',Arial,sans-serif;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    -moz-transition: color .3s ease-out,opacity .3s ease-out 0s,visibility .3s ease-out 0s,letter-spacing .3s ease-out;
+    -o-transition: color .3s ease-out,opacity .3s ease-out 0s,visibility .3s ease-out 0s,letter-spacing .3s ease-out;
+    -webkit-transition: color .3s ease-out,opacity .3s ease-out,visibility .3s ease-out,letter-spacing .3s ease-out;
+    -webkit-transition-delay: 0s,0s,0s,0s;
+    transition: color .3s ease-out,opacity .3s ease-out 0s,visibility .3s ease-out 0s,letter-spacing .3s ease-out;
+    &:focus {
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+    &:hover{
+      color: #949696;
+    }
+  }
 }
 
 div.screen ul li.has-children span {
@@ -142,12 +163,13 @@ div.screen ul li.has-children span {
   padding: 12px 16px;
   text-indent: -9999px;
 }
+.arrow{text-indent: -9999px;}
 
 div.screen  ul li.has-children span:after {
   content: "";
   position: absolute;
   top: 0;
-  right: 12px;
+  right: -12px;
   bottom: 0;
   margin: auto;
   padding: 4px;
@@ -180,6 +202,7 @@ div.screen ul li.has-children span:hover:after { border-color: #bababa; }
 .view-submenu .menu { background-color: #3e3e3e; }
 
 .view-submenu .menu > li > a {
+  font-family: 'futurademicregular';
   opacity: 0;
   -webkit-transition: opacity 0.15s ease-out;
   transition: opacity 0.15s ease-out;
@@ -311,7 +334,7 @@ div.screen ul li.has-children span:hover:after { border-color: #bababa; }
   width: 1px;
 }
 
-nav a#logo{
+header a#logo{
   display: block;
   width: 150px;
   height: 60px;
@@ -337,7 +360,11 @@ nav a#logo{
   margin: 60px 0 0 0;
   width: 100%;
   height: auto;
+} */
+.mob-header{
+  display: block;
 }
+
 section.i-main{
   padding: 25px;
   background: url(../../img/mobile/i-bg-mob.png) 100% 95% no-repeat;
@@ -508,32 +535,76 @@ section.i-portfolio{
 
     }
   }
-  a.i-link{
-    display: inline-block;
-    width: 220px;
-    font-size: 0.8em;
-    line-height: 26px;
-    text-decoration: none;
-    color: #ccc;
-    border: 1px solid #ccc;
-    padding: 0 20px;
-    text-transform: uppercase;
-    margin: 50px 0 50px -110px;
-    position: relative;
-    top: 0;
-    left: 50%;
-    transition:  border-color, color 0.3s ease-in-out;
-/*    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);*/
-    &:hover{
-      color: #000;
+  /*.i-link{*/
+     /*display: inline-block;*/
+   
+    /*margin: 50px 0 50px -110px;*/
+    /*position: relative;*/
+    /*top: 0;*/
+    /*left: 50%;*/
+    /*transition:  border-color, color 0.3s ease-in-out;*/
+    /*text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);*/
+    /* &:hover{
+    color: #000;
     border-color: #000;
     text-shadow: 2px 1px 2px rgba(204, 204, 204, 1);
-    }
-  }
+    } */
+  /*}*/
   
 }
 
+.svg-wrapper {
+  height: 60px;
+  margin: 30px auto;
+  /*position: relative;*/
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+  width: 320px;
+}
 
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  /*stroke: #19f6e8;*/
+  stroke: #000;
+}
+
+.text {
+  display: block;
+  height: 60px;
+  color: #000;
+  font-family: 'Roboto Condensed';
+  /*font-size: 22px;*/
+  letter-spacing: 8px;
+  line-height: 60px;
+  position: relative;
+  top: -102px;
+  width: 320px;
+  font-size: 0.6em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
 /* Кнопка вверх страницы */
 .scrollup{
 width:40px;
@@ -546,6 +617,8 @@ display:none;
 text-indent:-9999px;
 background: url('../../img/mobile/icon_top.png') no-repeat;
 }
+
+
 
 
 

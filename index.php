@@ -6,6 +6,20 @@
 
   <!-- style preloader -->
   <style>
+
+    @font-face {
+        font-family: 'futurademicregular';
+        src: url('fonts/futurademic-webfont.eot');
+        src: url('fonts/futurademic-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/futurademic-webfont.woff2') format('woff2'),
+             url('fonts/futurademic-webfont.woff') format('woff'),
+             url('fonts/futurademic-webfont.ttf') format('truetype'),
+             url('fonts/futurademic-webfont.svg#futurademicregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
     #page-preloader {
     position: fixed;
     left: 0;
@@ -222,18 +236,19 @@ async defer></script>
   </svg>
   </span></div>
   <div class="wrapper">
-    <header id="home">
-   <?php include('partials/sideBar.php')?>
-  <div class="bg-header col-16">
-    <a href="index.php"><img src="img/logo.png" alt="LOGO"></a>
-    <div><img src="img/title.png" alt="d" style="width: 25%;
-      margin: 5% 0 0 38%;"></div>
-      <p>авторский дизайн<br> частной и коммерческой<br> недвижимости</p>
-		<!--<h1><b>ДИЗАЙН</b> КОТОРЫЙ<br> УВЕЛИЧИВАЕТ<br> <b>ПРИБЫЛЬ</b> НА 34% </h1>
-    <p>Оформление и продвижение ресторанов, кафе,<br> офисов, магазинов, спорт клубов, гостиниц</p>-->
-    <img src="img/scroll.gif" alt="">
-  </div>
-</header>
+    <?php include('partials/header.php')?>
+    <?php include('partials/sideBar.php')?>
+    <div id="home">         
+         <div class="bg-header">
+              <a href="index.php"><img src="img/logo.png" alt="LOGO"></a>
+              <div><img src="img/title.png" alt="d" style="width: 25%;
+                margin: 5% 0 0 38%;"></div>
+              <p>авторский дизайн<br> частной и коммерческой<br> недвижимости</p>
+          		<!--<h1><b>ДИЗАЙН</b> КОТОРЫЙ<br> УВЕЛИЧИВАЕТ<br> <b>ПРИБЫЛЬ</b> НА 34% </h1>
+              <p>Оформление и продвижение ресторанов, кафе,<br> офисов, магазинов, спорт клубов, гостиниц</p>-->
+              <img src="img/scroll.gif" alt="">
+          </div>
+    </div>
 <div class="block-portfolio" id="portfolio">
   <div class="left">
     <a href="proekt.php">
@@ -268,7 +283,7 @@ async defer></script>
   </div>
 
   <a href="https://www.instagram.com/xkdesign/" target="_blank"><div class="boxs1 box-right-1"></div></a>
-  <a href="about us.php"><div class="boxs1 box-right-2"></div></a>
+  <a href="about%20us.php"><div class="boxs1 box-right-2"></div></a>
   <a href="prodvizenie.php"><div class="boxs1 box-right-3"></div></a>
   <a href="case/case-vita-stom.html"><div class="boxs1 box-right-4"></div></a>
 </div>  
@@ -344,36 +359,14 @@ async defer></script>
 </div>
 <div class="wrap-mob">
 <div class="screen">
-  <nav>
-    <a id="logo" href="http://localhost/hk-studio/index.php">Логотип</a>
-    <div class="toggle"><span>Menu</span></div>
-    <div class="menu-container">
-      <ul class="menu visually-hidden">
-        <li><a>О студии</a></li>
-        <li class="has-children"><a>Коммерческие проекты<span>more</span></a>
-          <ul class="submenu">
-            <li><a>Inlet (Бухта)</a></li>
-            <li><a>Ресторан Чеснок</a></li>
-            <li><a>Lullaby Bakery</a></li>
-          </ul>
-        </li>
-        <li><a>Дизайн интерьеров</a></li>
-        <li><a>Архитектура</a></li>
-        <li><a>Предметный дизайн</a></li>
-        <li><a>Комплексный подход</a></li>
-        <li><a>Стоимость дизайна</a></li>
-        <li><a>Блог</a></li>
-        <li><a>Контакты</a></li>        
-      </ul>
-    </div>
-  </nav>
-  <div class="main">
+<?php include('partials/header.php')?>
+   <div class="main">
     <!-- <section class="picture"></section> -->
     <img src="img/mobile/i-content-mob.jpg" alt="" id="pic" oncontextmenu="return false;">
     <section class="i-main">
       <h1>Студия Harchenko design</h1>
       <p>занимается разработкой и комплексной реализацией проектов под ключ. Наша команда проектирует 7 лет на рынке Украины. Среди наших проектов есть объекты как частной так и коммерческой недвижимости.</p>
-      <a href="about%20us-mob.php">узнать больше...</a>
+      <a href="about%20us.php">узнать больше...</a>
       <h2>мы разрабатываем</h2>
       <ul>
           <li><a href="">дизайн интерьера</a></li>
@@ -389,60 +382,17 @@ async defer></script>
             <a href="#" class="box-gallery3 box-gallery"><div class="shadowh"><h1 class="gallery-h1-3">Апартаменты в Хорватии<br />67 м.кв</h1></div></a>
             <a href="#" class="box-gallery4 box-gallery"><div class="shadowh"><h1 class="gallery-h1-4">танхаус Berlin House<br />120 м.кв</h1></div></a>
         </div>
-        <a class="i-link" href="#">смотреть портфолио</a>
+        <div class="svg-wrapper">
+          <svg height="100" width="320" xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape" height="60" width="320" />
+          </svg>
+          <a href="" class="text i-link">смотреть портфолио</a>
+        </div>
       </section>
   </div>
   <?php include('partials/footer.php')?>
 </div>     <!-- end screen -->
-<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script> 
-<script>
-var nav           = $('nav');
-var menu          = $('.menu');
-var menuContainer = $('.menu-container');
-var subMenu       = $('.submenu');
-var toggle        = $('.toggle');
-var subToggle     = $('.has-children span');
-var back          = '<div class="hide-submenu"></div>';
-var subHide       = $(back);
-var i             = $('body');
 
-// Toggle menu
-toggle.on("click", function() {
-  nav.toggleClass('is-visible');
-  if(menu.hasClass('visually-hidden')) {
-    menu.toggleClass('visually-hidden is-visible')
-    i.addClass('overflowhidecs');
-  } else {
-    menu.removeClass('is-visible');
-    i.removeClass('overflowhidecs');
-    // Wait for CSS animation
-    setTimeout(function() {
-      nav.removeClass('view-submenu');
-      menu.addClass('visually-hidden');
-    }, 200);
-  }
-});
-
-// Add submenu hide bar
-subHide.prependTo(subMenu);
-var subHideToggle = $('.hide-submenu');
-
-// Show submenu
-subToggle.on("click", function() {
-  i.addClass('overflowhidecs');
-  nav.addClass('view-submenu');
-
-  // Hide all the submenus...
-  subMenu.hide();
-  // ...except for the one being called
-  $(this).parents('li').find('.submenu').show();
-});
-// Hide submenu
-subHideToggle.on("click", function() {
-  nav.removeClass('view-submenu');
-});
-
-</script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];

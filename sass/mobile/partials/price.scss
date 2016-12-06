@@ -1,0 +1,188 @@
+.mobile-block-inter{
+  width: 100%;
+  height:auto;
+  padding: 30% 0;
+  background: url(../../img/price-img1.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.mobile-block-inter h1{
+  margin:0 0 10px 0;
+  font-size: 30px;
+  color:white;
+  font-family: "GothamProBlack";
+}
+.mobile-block-inter p{
+  margin:0;
+  font-size: 15px;
+  color:white;
+  font-family: "GothamProRegular";
+  font-weight: bold;
+}
+
+.mobile-block-arch{
+  width: 100%;
+  height:auto;
+  padding: 30% 0;
+  background: url(../../img/price-img2.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.mobile-block-arch h2{
+  margin:0 0 10px 0;
+  font-size: 30px;
+  color:white;
+  font-family: "GothamProBlack";
+}
+.mobile-block-arch p{
+  margin:0;
+  font-size: 15px;
+  color:white;
+  font-family: "GothamProRegular";
+  font-weight: bold;
+}
+
+.mobile-block-pred{
+  width: 100%;
+  height:auto;
+  padding: 30% 0;
+  background: url(../../img/price-img3.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.mobile-block-pred h3{
+  margin:0 0 10px 0;
+  font-size: 30px;
+  color:white;
+  font-family: "GothamProBlack";
+}
+.mobile-block-pred p{
+  margin:0;
+  font-size: 15px;
+  color:white;
+  font-family: "GothamProRegular";
+  font-weight: bold;
+}
+
+.mobile-block-prod{
+  width: 100%;
+  height:auto;
+  padding: 30% 0;
+  background: url(../../img/price-img4.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.mobile-block-prod h4{
+  margin:0 0 10px 0;
+  font-size: 30px;
+  color:white;
+  font-family: "GothamProBlack";
+}
+.mobile-block-prod p{
+  margin:0;
+  font-size: 15px;
+  color:white;
+  font-family: "GothamProRegular";
+  font-weight: bold;
+}
+.mobile-block-price-list{
+  width: 100%;
+  height:auto;
+  padding: 10% 0;
+  background: white;
+  text-align: center;
+}
+.mobile-block-price-list .fa{
+  font-size: 100px;
+}
+.mobile-block-price-list .fa1{
+  font-size: 25px;
+}
+.mobile-block-price-list h5{
+  margin:20px 0 10px 0;
+  font-size: 40px;
+  color:black;
+  font-family: "GothamProBlack";
+}
+.mobile-block-top-about{
+  width: 100%;
+  height:auto;
+  padding: 20% 0;
+   background: url(../../img/bg-about.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.mobile-block-top-about h1{
+  margin:0 0 10px 0;
+  font-size: 30px;
+  color:white;
+  font-family: "GothamProBlack";
+}
+.mobile-block-top-about p{
+  margin:0;
+  font-size: 15px;
+  color:white;
+  font-family: "GothamProRegular";
+  font-weight: bold;
+}
+
+.mobile-block-tel{
+  width: 100%;
+  height:auto;
+  padding: 15% 0%;
+  background: url(../../imgmobile/bg-form.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+}
+.mobile-block-tel p{
+  color:white;
+  font-family: "GothamProRegular";
+  font-size: 15px;
+  font-weight: bold;
+  margin:1% 0 2% 0;
+  position: relative;
+}
+.mobile-block-tel h6{
+  margin:0;
+  font-size: 30px;
+  text-align: center;
+  color:white;
+  font-family: "GothamProBlack";
+  font-weight: bold;
+
+}
+.mobile-block-tel > form > input[type="tel"]{
+  margin-left:0%;
+  margin-top: 0%;
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  color: #C8C8C8;
+   font-family: "GothamProRegular";
+   position: relative;
+}
+.mobile-block-tel > form > input[type="submit"]{ 
+  background: url(../../img/b.png) no-repeat 0 0 #396cbf;
+  width: 41px;
+  height: 38px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  margin: 1px 0 0 -42px;
+  
+  
+}

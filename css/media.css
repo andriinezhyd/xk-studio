@@ -556,9 +556,9 @@
 	.contacts-general{
 		float:none;
 	}
-	.for-office{
+	/*.for-office{
   		padding-left: 7%;
-	}
+	}*/
 	.submenu > li > a {
     	font-size: 17px;
 	}
@@ -1298,7 +1298,7 @@
     
 	}
 }
-
+/* 
 @media only screen and (max-width : 800px) {
 	.for-office {
     
@@ -1308,7 +1308,7 @@
     	background: url(../img/phone.png) no-repeat 0 0 / 19px 16px;
     }
 
-}
+} */
 @media only screen and (max-width : 680px){
 	.direction-prod p{
 		font-size: 35px;
