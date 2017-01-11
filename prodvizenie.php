@@ -55,12 +55,9 @@
 </head>
 <body>
 <div class="wrapper">
-<header id="home">
+<header>
 	<?php include('partials/sideBar.php')?>
-  <div class="top">
-    <h1><a href="index.php" class="krosh">ГЛАВНАЯ</a> / <small><a href="prodvizenie.php" class="active">КОМПЛЕКСНЫЙ ПОДХОД</a></small></h1>
-    <a href="index.php"><img src="img/logo-black.png" alt="LOGO"></a>
-  </div>
+  	<?php include('partials/top.php')?>	
 </header>
 <div class="bg-prodvizenie">
 	<h1>Уникальная технология<br> продающего дизайна — когда<br> прибыль увеличивается на 34% </h1>

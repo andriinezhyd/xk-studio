@@ -46,12 +46,9 @@
 </head>
 <body>
 <div class="wrapper">
-<header id="home">
+<header>
   <?php include('partials/sideBar.php')?>
-  <div class="top">
-    <h1><a href="index.php" class="krosh">ГЛАВНАЯ</a> / <small><a href="" class="active">КОНТАКТЫ</a></small></h1>
-    <a href="index.php"><img src="img/logo-black.png" alt="LOGO"></a>
-  </div>
+  <?php include('partials/top.php')?>
 </header>
 <div class="block-contact-and-map" id="contact">
   <div class="contact">
@@ -99,6 +96,7 @@
           <div class="phone-number contacts-general">
             <p><!-- <b>КАК С НАМИ СВЯЗАТЬСЯ</b> <br> --> <span class="for-phone-number"><a href="tel:+380951715166" >(095) 171 51 66</a><br><a href="tel:+380577506747" >(057) 750 67 47</a></span></p>
           </div>
+          <div class="phone-number contacts-general">info@hk-design.com.ua</div>
           <div class="office contacts-general">
             <p><!-- <b>НАШ ОФИС</b> <br> --><span class="for-office">пр.Гагарина 41/2</span></p>
           </div>

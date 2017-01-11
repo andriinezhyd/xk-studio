@@ -53,12 +53,9 @@
 </head>
 <body>
 <div class="wrapper">
-<header id="home">
-	<?php include('partials/sideBar.php')?>
-  <div class="top">
-    <h1><small><a href="index.php" class="krosh">ГЛАВНАЯ</a></small> / <a href="price.php" class="krosh">СТОИМОСТЬ ДИЗАЙНА</a> / <small><a href="architek.html" class="active">ДИЗАЙН</a></small></h1>
-    <a href="index.php"><img src="img/logo-black.png" alt="LOGO"></a>
-  </div>
+<header>
+  <?php include('partials/sideBar.php')?>
+  <?php include('partials/top.php')?>
 </header>
 <div class="block-box-for-price">
   <div class="cells">

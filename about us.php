@@ -55,12 +55,11 @@
 </head>
 <body>
 <div class="wrapper">
-<?php include('partials/sideBar.php')?>
- 
-  <div class="top">
-    <h1><a href="index.php" class="krosh">ГЛАВНАЯ</a> / <small><a href="" class="active">О СТУДИИ</a></small></h1>
-    <a href="index.php"><img src="img/logo-black.png" alt="LOGO"></a>
-  </div>
+	<header>
+		<?php include('partials/sideBar.php')?>
+		<?php include('partials/top.php')?>
+	</header>
+  
 
 <div class="block-about">
 	<h1>СТУДИЯ<br> HARCHENKO DESIGN</h1>

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <?php include('partials/head.php')?>
-  <title>О студии</title>
+  <title>Стоимость дизайна</title>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -46,12 +46,9 @@
 </head>
 <body>
 <div class="wrapper">
-<header id="home">
+<header>
   <?php include('partials/sideBar.php')?>
-  <div class="top">
-    <h1><a href="index.php" class="krosh">ГЛАВНАЯ</a> / <small><a href="price.php" class="active">СТОИМОСТЬ ДИЗАЙНА</a></small>  </h1>
-    <a href="index.php"><img src="img/logo-black.png" alt="LOGO"></a>
-  </div>
+  <?php include('partials/top.php')?>
 </header>
 <div class="block-price">
   <ul>

@@ -234,19 +234,19 @@ async defer></script>
       <path class="path2" fill="#242424" stroke="#fff" stroke-width="3" stroke-miterlimit="10" d="M350 200 ,200 50z"/>
       <path class="path2" fill="#242424" stroke="#fff" stroke-width="3" stroke-miterlimit="10" d="M350 200 ,200 350z"/>
   </svg>
-  </span></div>
+  </span>
+  </div>
   <div class="wrapper">
     <?php include('partials/header.php')?>
     <?php include('partials/sideBar.php')?>
     <div id="home">         
          <div class="bg-header">
-              <a href="index.php"><img src="img/logo.png" alt="LOGO"></a>
-              <div><img src="img/title.png" alt="d" style="width: 25%;
-                margin: 5% 0 0 38%;"></div>
+              <a href="index.php" class="size-logo-big pos-logo-l"></a>
+              
               <p>авторский дизайн<br> частной и коммерческой<br> недвижимости</p>
           		<!--<h1><b>ДИЗАЙН</b> КОТОРЫЙ<br> УВЕЛИЧИВАЕТ<br> <b>ПРИБЫЛЬ</b> НА 34% </h1>
               <p>Оформление и продвижение ресторанов, кафе,<br> офисов, магазинов, спорт клубов, гостиниц</p>-->
-              <img src="img/scroll.gif" alt="">
+              <img src="img/scroll.gif">
           </div>
     </div>
 <div class="block-portfolio" id="portfolio">
@@ -260,10 +260,10 @@ async defer></script>
     </a>
   </div>
   <div class="middle">
-    <a href="layout/aqua.html"><div class="boxs box-mid-1"></div></a>
-    <a href="layout/point.html"><div class="boxs box-mid-2"></div></a>
-    <a href="layout/arch.html"><div class="boxs box-mid-3"></div></a>
-    <a href="layout/berlinhouse.html"><div class="boxs box-mid-4"></div></a>
+    <a href="layout/aqua.php"><div class="boxs box-mid-1"></div></a>
+    <a href="layout/point.php"><div class="boxs box-mid-2"></div></a>
+    <a href="layout/arch.php"><div class="boxs box-mid-3"></div></a>
+    <a href="layout/berlin.php"><div class="boxs box-mid-4"></div></a>
     <div class="box-big">
 
       <div class="mask text-in-box">
@@ -298,7 +298,10 @@ async defer></script>
     </form>
   </div>
 </div>
-
+<div class="block-history philosophy">
+  <h2>Философия дизайна</h2>
+  <p> Если вы решили  создать прекрасную атмосферу готовы к смелым и уникальным решениям. Хотите сделать мир  вокруг себя, комфортным и функциональным тогда  студия Harchenco design – может помочь вам в создании самых смелых архитектурных проектов  и креативных дизайнов. Если вы решили поменять жилье или приобрели новую квартиру или построить дом своей мечты, обсудить создание нового офиса  то команда нашей студии готова помочь вам в реализации ваших объектов. Философия концептуального и творческого подхода поможет вам создать пространство которое будет максимально соответствовать вашим требованиям и пожеланиям.  Заказать профессиональный дизайн интерьера или архитектурный проект, вы сможете  можете в студии Harchenco design. Большое портфолио работ разносторонних проектов, разработка дизайнов квартир, частных домов, загородных коттеджей, проектирование офисов, создание уникальных и функциональных дизайнов для отелей, кафе и ресторанов – все это вы найдете в нашей студии.</p>
+</div>
 
 
 <div class="block-contact-and-map" id="contact">
@@ -386,7 +389,7 @@ async defer></script>
           <svg height="100" width="320" xmlns="http://www.w3.org/2000/svg">
             <rect class="shape" height="60" width="320" />
           </svg>
-          <a href="" class="text i-link">смотреть портфолио</a>
+          <a href="" class="text">смотреть портфолио</a>
         </div>
       </section>
   </div>

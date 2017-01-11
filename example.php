@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<?php include('partials/head.php')?>
-	<title>О студии</title>
+	<title>Архитектура</title>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -46,91 +46,22 @@
 </head>
 <body>
 <div class="wrapper">
-<header id="home">
-  <?php include('partials/sideBar.php')?>
-  <div class="top">
-    <h1><a href="index.php" class="krosh">ГЛАВНАЯ</a> / <small><a href="" class="active">КОНТАКТЫ</a></small></h1>
-    <a href="index.php"><img src="img/logo-black.png" alt="LOGO"></a>
-  </div>
-</header>
-<div class="block-contact-and-map" id="contact">
-	<div class="contact">
-		<h2>КОНТАКТЫ</h2>
-		<div class="office contacts-general">
-			<p><b class="line">НАШ ОФИС</b>
-      <p class="for-office">пр.Гагарина 41/2</p>
-		</div>
-		<div class="phone-number contacts-general">
-			<p class="line"><b>КАК С НАМИ СВЯЗАТЬСЯ</b></p>
-      <p class="for-phone-number"><a href="tel:+380951715166" >+380951715166</a><br><a href="tel:+380577506747" >+380577506747</a></p>
-		</div>
-		<div class="email-direct contacts-general">
-			<form action="mail.php" name="mail" method="post">
-        		<span><b class="line">E-MAIL РАССЫЛКА</b></span><br>
-        		<label for="email">Опыт, идеи, новости ,<br> обратная связь<br>
-          			<input type="email" name="email" id="email" placeholder="ivanov@ivan.ru" required>
-          		</label>
-          			<input type="submit" value="" >
-   			</form>
-		</div>
-		<div class="social-button contacts-general">
-			<p><b>СОЦИАЛЬНЫЕ СЕТИ</b></p>
-			<ul>
-				<li><a class="fb" href="https://www.facebook.com/xkdesingstudio/"></a></li>
-        		<li><a class="vk" href="https://vk.com/arthallkharkov"></a></li>
-        		<li><a class="yt" href="https://www.youtube.com/channel/UC2YH7AHz5TBPgUf1ccqUNRw"></a></li>
-        		<li><a class="in" href="https://www.instagram.com/xkdesign/"></a></li>
-			</ul>
-		</div>
-		<a href="#openModal"><button>Связаться с менеджером</button></a>
-</div>
-<div  id="map" scrollwheel="false" style="height:850px;">
-   
-  </div>
-</div>
+	<header>
+		<?php include('partials/sideBar.php')?>
+		<?php include('partials/top.php')?>
+	</header>
+
+
+
+<?php include('partials/footer.php')?>
 </div>
 <div class="wrap-mob">
 	<div class="screen">
 		<?php include('partials/header.php')?>
 		<div class="main">
-			<div class="block-contact-and-map" id="contact">
-				<div class="contact">
-					<h2>КОНТАКТЫ</h2>
-					<div class="phone-number contacts-general">
-						<p><!-- <b>КАК С НАМИ СВЯЗАТЬСЯ</b> <br> --> <span class="for-phone-number"><a href="tel:+380951715166" >(095) 171 51 66</a><br><a href="tel:+380577506747" >(057) 750 67 47</a></span></p>
-					</div>
-					<div class="office contacts-general">
-						<p><!-- <b>НАШ ОФИС</b> <br> --><span class="for-office">пр.Гагарина 41\2</span></p>
-					</div>
-					<div class="maps">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.875094281557!2d36.2525408149933!3d49.97620092930463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a08705e523a5%3A0xc78b79db11af682a!2sXK+design+studio!5e0!3m2!1sru!2sua!4v1480983945841" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-					<!-- <div class="email-direct contacts-general">
-						<form action="mail.php" name="mail" method="post">
-							<span><b>E-MAIL РАССЫЛКА</b></span><br>
-							<label for="email">Опыт, идеи, новости ,<br> обратная связь<br>
-								<input type="email" name="email" id="email" placeholder="ivanov@ivan.ru" required>
-							</label>
-							<input type="submit" value="" >
-						</form>
-					</div> -->
-					<a href="#openModal"><button>Связаться с менеджером</button></a>
-					<div class="social-button contacts-general">
-						<!-- <p><b>СОЦИАЛЬНЫЕ СЕТИ</b></p> -->
-						<ul>
-							<li><a class="fb" href="https://www.facebook.com/xkdesingstudio/"></a></li>
-							<li><a class="vk" href="https://vk.com/arthallkharkov"></a></li>
-							<li><a class="yt" href="https://www.youtube.com/channel/UC2YH7AHz5TBPgUf1ccqUNRw"></a></li>
-							<li><a class="in" href="https://www.instagram.com/xkdesign/"></a></li>
-						</ul>
-					</div>
-					
-				</div>
-      <!-- <div  id="map" scrollwheel="false" style="height:850px;">
-
-  </div> -->
+			
 </div>
-</div>
+<?php include('partials/footer.php')?>
 	</div>     <!-- end screen -->
 <!-- <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>  -->
 

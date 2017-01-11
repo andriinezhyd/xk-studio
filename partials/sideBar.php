@@ -11,11 +11,11 @@
                 </ul>
         </div>
           <ul id="left">
-            <li><a href="about us.php">о студии</a></li>
+            <li><a href="about%20us.php">о студии</a></li>
             <li><a href="proekt.php">коммерческие проекты</a></li>
             <li><a href="gallery.php">дизайн интерьеров</a></li>
-            <li><a href="#">архитектура</a></li>
-            <li><a href="#">предметный дизайн</a></li>
+            <li><a href="example.php">архитектура</a></li>
+            <li><a href="object-design.php">предметный дизайн</a></li>
           </ul>
           <ul id="right">
             <li><a href="prodvizenie.php">комплексный подход</a></li>
@@ -25,7 +25,7 @@
           </ul>               
         </ul>
       </li>
-      <li class="cat2 cat"><a href="#home" class="icon2"></a><br>ДОМОЙ</li>
+      <li class="cat2 cat"><a href="index.php" class="icon2"></a><br>ДОМОЙ</li>
       <li class="cat3 cat"><a href="gallery.php" class="icon3"></a><br>ПОРТФОЛИО</li>
       <li class="cat4 cat"><a href="contact.php" class="icon4"></a><br>КОНТАКТЫ</li>
     </ul>
